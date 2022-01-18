@@ -5,6 +5,7 @@
 }
 
 .addNew {
+  position: absolute;
   font-family: serif;
   font-size: 40px;
   background-color: rgba(95, 150, 235, 0.5);
@@ -12,6 +13,19 @@
   width: 60px;
   border-radius: 30px;
   border: none;
-  transform: translate(140px, 140px);
-  /* box-shadow : ; */
+  transform: translate(500px, 450px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.2);
+  transition: all 150ms linear;
+}
+
+.addNew:hover {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+}
+
+.addNew:focus {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }

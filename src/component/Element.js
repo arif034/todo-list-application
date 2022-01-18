@@ -1,11 +1,12 @@
-import { Component, Fragment } from "react";
+import React from "react";
 
-class Element extends Component {
+class Element extends React.Component {
   render() {
+    const item = this.props.item;
     return (
-      <Fragment>
-        <li className="li">{this.props.element}</li>
-      </Fragment>
+      <React.Fragment>
+        <li className="li">{item}</li>
+      </React.Fragment>
     );
   }
 }

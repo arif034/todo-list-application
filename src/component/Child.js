@@ -8,28 +8,35 @@ class Child extends Component {
       itemList: []
     };
   }
-  onChange = (event) => {
-    this.setState((prevState) => {
-      return { item: event.target.value };
+  onChanges = (event) => {
+    this.setState({ item: event.target.value });
+  };
+
+  onSubmits = () => {
+    const newList = [...this.state.itemList, this.state.item];
+    this.setState({
+      itemList: newList
     });
   };
 
-  onSubmit = (event) => {
-    this.setState(() => {
-      return {
-        itemList: [...this.state.itemList, event.target.value]
-      };
-    });
-  };
   render() {
-    const items = this.state.itemList.map((element) => (
-      <Element element={element} />
+    const listItem = this.state.itemList.map((item) => (
+      <Element item={item} className="element" />
     ));
+    console.log(listItem);
     return (
-      <div>
-        <input type="text" value={this.state.item} onChange={this.onChange} />
-        <button onSubmit={this.onSubmit}>Submit</button>
-        <ul>{items}</ul>
+      <div className="App">
+        <input
+          placeholder="Write here"
+          value={this.state.item}
+          onChange={this.onChanges}
+        />
+        <br />
+        <br />
+        <button onClick={this.onSubmits}>Add new</button>
+        <br />
+        <br />
+        <ul>{listItem}</ul>
       </div>
     );
   }

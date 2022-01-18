@@ -1,5 +1,17 @@
 .App {
-  font-family: sans-serif;
+  font-family: serif;
   text-align: center;
   background-color: red;
+}
+
+.addNew {
+  font-family: serif;
+  font-size: 40px;
+  background-color: rgba(95, 150, 235, 0.5);
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: none;
+  transform: translate(140px, 140px);
+  /* box-shadow : ; */
 }

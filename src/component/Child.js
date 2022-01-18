@@ -33,7 +33,9 @@ class Child extends Component {
         />
         <br />
         <br />
-        <button onClick={this.onSubmits}>Add new</button>
+        <button className="addNew" onClick={this.onSubmits}>
+          +
+        </button>
         <br />
         <br />
         <ul>{listItem}</ul>

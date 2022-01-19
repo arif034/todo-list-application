@@ -1,7 +1,7 @@
 .App {
   font-family: serif;
   text-align: center;
-  background-color: red;
+  background-color: rgba(95, 150, 235, 0.2);
 }
 
 .addNew {
@@ -24,8 +24,32 @@
   border-radius: 35px;
 }
 
-.addNew:focus {
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
+.inputField {
+  position: absolute;
+  font-family: serif;
+  font-size: 14px;
+  border: none;
+  height: 25px;
+  width: 200px;
+  transform: translate(-150px, 150px);
+  background-color: rgba(0, 255, 0, 0.2);
 }
+
+/* @keyframes show-input-fields {
+  0% : ;
+  50% : ;
+  100% : ;
+} */
+
+.li {
+  position: relative;
+  height: 40px;
+  width: 60px;
+  background-color: hotpink;
+  border: none;
+  list-style: none;
+}
+/*
+ to slow show the text area on click and hide on submit and that element should 
+ write over the list items render in the background
+*/

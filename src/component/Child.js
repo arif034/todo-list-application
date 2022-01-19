@@ -27,6 +27,7 @@ class Child extends Component {
     return (
       <div className="App">
         <input
+          className="inputField"
           placeholder="Write here"
           value={this.state.item}
           onChange={this.onChanges}

@@ -1,13 +1,6 @@
 import React from "react";
 
-class Element extends React.Component {
-  render() {
-    const item = this.props.item;
-    return (
-      <React.Fragment>
-        <li className="li">{item}</li>
-      </React.Fragment>
-    );
-  }
-}
+const Element = (props) => {
+  return <li className="grid-item">{props.text}</li>;
+};
 export default Element;

@@ -1,7 +1,7 @@
 .App {
   font-family: serif;
   text-align: center;
-  background-color: rgba(95, 150, 235, 0.2);
+  background-color: white;
 }
 
 .addNew {
@@ -41,15 +41,33 @@
   100% : ;
 } */
 
-.li {
-  position: relative;
-  height: 40px;
-  width: 60px;
-  background-color: hotpink;
-  border: none;
-  list-style: none;
+.ul {
+  background-color: rgb(250, 250, 250);
+  margin: 10px;
+  height: 300px;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: auto 100px auto;
+  vertical-align: top;
 }
 /*
  to slow show the text area on click and hide on submit and that element should 
  write over the list items render in the background
 */
+.grid-container {
+  position: relative;
+  background-color: red;
+  display: grid;
+  height: 300px;
+  grid-template-columns: auto;
+  /* wrap */
+}
+
+.grid-item {
+  position: relative;
+  background-color: blue;
+  grid-gap: 10px, 10px;
+  width: 30px;
+}

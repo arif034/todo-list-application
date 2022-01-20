@@ -20,10 +20,7 @@ class Child extends Component {
   };
 
   render() {
-    const listItem = this.state.itemList.map((item) => (
-      <Element item={item} className="element" />
-    ));
-    console.log(listItem);
+    const listItem = this.state.itemList.map((item) => <Element text={item} />);
     return (
       <div className="App">
         <input
@@ -39,7 +36,7 @@ class Child extends Component {
         </button>
         <br />
         <br />
-        <ul>{listItem}</ul>
+        <ul className="grid-container">{listItem}</ul>
       </div>
     );
   }
